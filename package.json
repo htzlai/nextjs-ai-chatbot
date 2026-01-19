@@ -1,7 +1,8 @@
 {
-  "name": "ai-chatbot",
-  "version": "3.1.0",
+  "name": "molycure-ai",
+  "version": "1.0.0",
   "private": true,
+  "description": "Molycure AI - 企业出海落地 AI 执行平台",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "tsx lib/db/migrate && next build",

@@ -1,71 +1,93 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Chat SDK</h1>
+<a href="https://molycure.ai/">
+  <img alt="Molycure AI - 企业出海落地 AI 执行平台" src="app/(chat)/opengraph-image.png">
+  <h1 align="center">Molycure AI</h1>
 </a>
 
 <p align="center">
-    Chat SDK is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications.
+    Molycure AI 是一个面向企业"出海落地"的垂直型 AI 执行平台，将跨境扩张从高度依赖人工经验的咨询行为，转化为软件驱动、以执行为导向的系统化流程。
 </p>
 
 <p align="center">
-  <a href="https://chat-sdk.dev"><strong>Read Docs</strong></a> ·
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
+  <a href="#核心价值"><strong>核心价值</strong></a> ·
+  <a href="#功能特性"><strong>功能特性</strong></a> ·
+  <a href="#技术架构"><strong>技术架构</strong></a> ·
+  <a href="#本地运行"><strong>本地运行</strong></a>
 </p>
 <br/>
 
-## Features
+## 背景
+
+在全球化碎片化、监管复杂度持续上升的背景下，越来越多企业希望进入新加坡及东南亚市场，但现实中往往面临一个核心问题：**信息很多，但"能真正落地执行"的路径极度缺失。**
+
+传统工具与服务存在明显断层：
+- 通用 AI 只能解释政策、概念，无法承担合规与执行责任
+- 咨询公司依赖人工经验，成本高、周期长、不可复制
+- 法律、税务、签证、GTM 等环节彼此割裂，没有统一的执行系统
+
+Molycure AI 正是诞生于这一"执行断层"。
+
+## 核心价值
+
+> **Molycure AI 将跨境扩张从"高度依赖人工经验的咨询行为"，转化为"软件驱动、以执行为导向的系统化流程"。**
+
+从背景上看，Molycure AI 解决的是三件事：
+
+1. **把"模糊的出海想法"变成可执行路线图**
+   - 明确市场、路径、时间表与关键风险节点
+
+2. **把碎片化的法律/税务/合规信息，转化为决策逻辑**
+   - 不只是"告诉你规则"，而是"告诉你下一步该做什么"
+
+3. **把一次性、不可复制的咨询经验，变成持续演进的系统能力**
+   - 能随着法规变化实时更新，适用于更多企业与市场
+
+## 功能特性
+
+- **智能对话界面** - 基于 AI SDK 构建的流畅对话体验
+- **出海知识库** - 新加坡及东南亚市场的专业知识
+- **执行路线图** - 可视化的出海执行计划
+- **合规检查** - 法律、税务、签证等合规指引
+- **文档生成** - 自动生成所需的商业文档
+
+## 技术架构
 
 - [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
+  - React Server Components (RSCs) 和 Server Actions
 - [AI SDK](https://ai-sdk.dev/docs/introduction)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports xAI (default), OpenAI, Fireworks, and other model providers
+  - 统一的 LLM API 接口
 - [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Neon Serverless Postgres](https://vercel.com/marketplace/neon) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [Auth.js](https://authjs.dev)
-  - Simple and secure authentication
+  - [Tailwind CSS](https://tailwindcss.com) 样式
+  - [Radix UI](https://radix-ui.com) 组件
+- 数据持久化
+  - PostgreSQL 数据库
+  - Blob 存储
 
-## Model Providers
+## 本地运行
 
-This template uses the [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to access multiple AI models through a unified interface. The default configuration includes [xAI](https://x.ai) models (`grok-2-vision-1212`, `grok-3-mini`) routed through the gateway.
-
-### AI Gateway Authentication
-
-**For Vercel deployments**: Authentication is handled automatically via OIDC tokens.
-
-**For non-Vercel deployments**: You need to provide an AI Gateway API key by setting the `AI_GATEWAY_API_KEY` environment variable in your `.env.local` file.
-
-With the [AI SDK](https://ai-sdk.dev/docs/introduction), you can also switch to direct LLM providers like [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://ai-sdk.dev/providers/ai-sdk-providers) with just a few lines of code.
-
-## Deploy Your Own
-
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/templates/next.js/nextjs-ai-chatbot)
-
-## Running locally
-
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
-
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+1. 安装依赖：
 
 ```bash
 pnpm install
-pnpm db:migrate # Setup database or apply latest database changes
+```
+
+2. 配置环境变量（参考 `.env.example`）
+
+3. 初始化数据库：
+
+```bash
+pnpm db:migrate
+```
+
+4. 启动开发服务器：
+
+```bash
 pnpm dev
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000).
+应用将在 [localhost:3000](http://localhost:3000) 运行。
+
+---
+
+<p align="center">
+  <strong>Molycure AI</strong> - 让企业出海更简单
+</p>

@@ -75,6 +75,34 @@ export const VercelIcon = ({ size = 17 }) => {
   );
 };
 
+export const MolycureIcon = ({ size = 17 }) => {
+  return (
+    <svg
+      height={size}
+      strokeLinejoin="round"
+      style={{ color: "#00D084" }}
+      viewBox="0 0 16 16"
+      width={size}
+    >
+      <path
+        d="M8 1L14.9282 5V13L8 17L1.07179 13V5L8 1Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <circle cx="8" cy="9" r="2.5" fill="currentColor" />
+      <circle cx="4" cy="6" r="1.5" fill="currentColor" />
+      <circle cx="12" cy="6" r="1.5" fill="currentColor" />
+      <circle cx="4" cy="12" r="1.5" fill="currentColor" />
+      <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+      <line x1="8" y1="9" x2="4" y2="6" stroke="currentColor" strokeWidth="0.8" />
+      <line x1="8" y1="9" x2="12" y2="6" stroke="currentColor" strokeWidth="0.8" />
+      <line x1="8" y1="9" x2="4" y2="12" stroke="currentColor" strokeWidth="0.8" />
+      <line x1="8" y1="9" x2="12" y2="12" stroke="currentColor" strokeWidth="0.8" />
+    </svg>
+  );
+};
+
 export const GitIcon = () => {
   return (
     <svg

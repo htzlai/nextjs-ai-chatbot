@@ -7,9 +7,9 @@ import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chat.vercel.ai"),
-  title: "Next.js Chatbot Template",
-  description: "Next.js chatbot template using the AI SDK.",
+  metadataBase: new URL("https://molycure.ai"),
+  title: "Molycure AI - 企业出海落地 AI 执行平台",
+  description: "Molycure AI 是面向企业出海落地的垂直型 AI 执行平台，将跨境扩张从高度依赖人工经验的咨询行为，转化为软件驱动、以执行为导向的系统化流程。",
 };
 
 export const viewport = {
@@ -60,7 +60,7 @@ export default function RootLayout({
       // visual flicker before hydration. Hence the `suppressHydrationWarning`
       // prop is necessary to avoid the React hydration mismatch warning.
       // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
-      lang="en"
+      lang="zh-CN"
       suppressHydrationWarning
     >
       <head>
