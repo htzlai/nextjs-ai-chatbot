@@ -25,12 +25,12 @@ function PureChatHeader({
   const { width: windowWidth } = useWindowSize();
 
   return (
-    <header className="sticky top-0 flex items-center gap-2 bg-background px-2 py-1.5 md:px-2">
+    <header className="sticky top-0 z-10 flex items-center gap-2 border-b bg-background/95 px-2 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-4">
       <SidebarToggle />
 
       {(!open || windowWidth < 768) && (
         <Button
-          className="order-2 ml-auto h-8 px-2 md:order-1 md:ml-0 md:h-fit md:px-2"
+          className="order-2 ml-auto h-9 rounded-lg px-3 transition-all duration-200 hover:bg-primary/10 hover:text-primary md:order-1 md:ml-0"
           onClick={() => {
             router.push("/");
             router.refresh();
@@ -51,7 +51,21 @@ function PureChatHeader({
       )}
 
       <div className="order-3 hidden md:ml-auto md:flex md:h-fit items-center gap-2">
-        <span className="text-sm text-emerald-500 font-medium">Molycure AI</span>
+        <div className="flex items-center gap-2">
+          <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary/10">
+            <svg
+              className="h-4 w-4 text-primary"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <span className="text-sm font-semibold text-primary">Molycure AI</span>
+        </div>
       </div>
     </header>
   );

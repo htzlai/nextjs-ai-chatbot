@@ -19,35 +19,50 @@
   --card-foreground: hsl(240 10% 3.9%);
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(240 10% 3.9%);
-  --primary: hsl(240 5.9% 10%);
-  --primary-foreground: hsl(0 0% 98%);
+  
+  /* Molycure AI 品牌色 - 翡翠绿 */
+  --primary: hsl(162 100% 42%); /* #00D084 */
+  --primary-foreground: hsl(0 0% 100%);
+  
   --secondary: hsl(240 4.8% 95.9%);
   --secondary-foreground: hsl(240 5.9% 10%);
   --muted: hsl(240 4.8% 95.9%);
   --muted-foreground: hsl(240 3.8% 46.1%);
-  --accent: hsl(240 4.8% 95.9%);
-  --accent-foreground: hsl(240 5.9% 10%);
+  
+  /* 浅绿色强调色 */
+  --accent: hsl(162 100% 95%); /* #E8FFF5 */
+  --accent-foreground: hsl(162 100% 25%);
+  
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: hsl(240 5.9% 90%);
   --input: hsl(240 5.9% 90%);
-  --ring: hsl(240 10% 3.9%);
+  --ring: hsl(162 100% 42%);
   --chart-1: hsl(12 76% 61%);
   --chart-2: hsl(173 58% 39%);
   --chart-3: hsl(197 37% 24%);
   --chart-4: hsl(43 74% 66%);
   --chart-5: hsl(27 87% 67%);
-  --sidebar-background: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-  --sidebar-primary: hsl(240 5.9% 10%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-  /* border radius unit */
-  --radius: 0.5rem;
-  --sidebar: hsl(0 0% 98%);
+  
+  /* 侧边栏 - 深色主题 */
+  --sidebar-background: hsl(180 50% 8%); /* 深绿色 */
+  --sidebar-foreground: hsl(0 0% 95%);
+  --sidebar-primary: hsl(162 100% 42%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(180 40% 12%);
+  --sidebar-accent-foreground: hsl(0 0% 95%);
+  --sidebar-border: hsl(180 40% 15%);
+  --sidebar-ring: hsl(162 100% 42%);
+  
+  /* border radius unit - 增大圆角 */
+  --radius: 1rem; /* 从 0.5rem 增加到 1rem */
+  --sidebar: hsl(180 50% 8%);
+  
+  /* Molycure AI 自定义变量 */
+  --molycure-green: hsl(162 100% 42%); /* #00D084 */
+  --molycure-green-light: hsl(162 100% 95%); /* #E8FFF5 */
+  --molycure-green-dark: hsl(180 50% 8%); /* #0a2f2f */
+  --molycure-green-bright: hsl(162 100% 50%); /* #00FF9F */
 }
 
 /* define design tokens (dark mode) */
@@ -58,33 +73,41 @@
   --card-foreground: hsl(0 0% 98%);
   --popover: hsl(240 10% 3.9%);
   --popover-foreground: hsl(0 0% 98%);
-  --primary: hsl(0 0% 98%);
-  --primary-foreground: hsl(240 5.9% 10%);
+  
+  /* Molycure AI 品牌色 - 深色模式 */
+  --primary: hsl(162 100% 42%);
+  --primary-foreground: hsl(0 0% 100%);
+  
   --secondary: hsl(240 3.7% 15.9%);
   --secondary-foreground: hsl(0 0% 98%);
   --muted: hsl(240 3.7% 15.9%);
   --muted-foreground: hsl(240 5% 64.9%);
-  --accent: hsl(240 3.7% 15.9%);
-  --accent-foreground: hsl(0 0% 98%);
+  
+  /* 深色模式下的强调色 */
+  --accent: hsl(180 40% 12%);
+  --accent-foreground: hsl(162 100% 70%);
+  
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: hsl(240 3.7% 15.9%);
   --input: hsl(240 3.7% 15.9%);
-  --ring: hsl(240 4.9% 83.9%);
+  --ring: hsl(162 100% 42%);
   --chart-1: hsl(220 70% 50%);
   --chart-2: hsl(160 60% 45%);
   --chart-3: hsl(30 80% 55%);
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
-  --sidebar-background: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
+  
+  /* 侧边栏 - 深色主题 */
+  --sidebar-background: hsl(180 50% 8%);
+  --sidebar-foreground: hsl(0 0% 95%);
+  --sidebar-primary: hsl(162 100% 42%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-accent: hsl(180 40% 12%);
+  --sidebar-accent-foreground: hsl(0 0% 95%);
+  --sidebar-border: hsl(180 40% 15%);
+  --sidebar-ring: hsl(162 100% 42%);
+  --sidebar: hsl(180 50% 8%);
 }
 
 /* define theme */
@@ -140,6 +163,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Molycure AI 自定义颜色 */
+  --color-molycure-green: var(--molycure-green);
+  --color-molycure-green-light: var(--molycure-green-light);
+  --color-molycure-green-dark: var(--molycure-green-dark);
+  --color-molycure-green-bright: var(--molycure-green-bright);
 }
 
 /*
@@ -205,6 +234,54 @@
 
   html {
     overflow-x: hidden;
+  }
+}
+
+/* Molycure AI 自定义样式 */
+@layer components {
+  /* 卡片悬停效果 - askwizly 风格 */
+  .card-hover {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+  
+  /* 主按钮样式 - 翡翠绿 */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground rounded-xl px-6 py-3 font-medium;
+    @apply transition-all duration-200 ease-in-out;
+    @apply hover:brightness-110 hover:shadow-md;
+  }
+  
+  /* 次按钮样式 - 透明边框 */
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary rounded-xl px-6 py-3 font-medium;
+    @apply transition-all duration-200 ease-in-out;
+    @apply hover:bg-primary hover:text-primary-foreground;
+  }
+  
+  /* 消息卡片样式 */
+  .message-card {
+    @apply bg-accent rounded-2xl p-6 shadow-sm;
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  /* 输入框聚焦效果 */
+  .input-focus {
+    @apply focus:ring-2 focus:ring-primary focus:border-primary;
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  /* Hero 区域渐变背景 */
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(180 50% 8%) 0%, hsl(180 40% 15%) 100%);
+  }
+  
+  /* 浅色卡片背景 */
+  .card-light-green {
+    @apply bg-accent/50 backdrop-blur-sm;
   }
 }
 
